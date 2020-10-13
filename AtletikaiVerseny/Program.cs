@@ -19,10 +19,20 @@ namespace AtletikaiVerseny
             }
             sr.Close();
         }
+        static void Feladat2()
+        {
+            foreach (var l in lista)
+            {
+                Console.WriteLine("{0,15} {1,10} ",l.VezNev,l.Ugras);
+            }
+        }
         static void Main(string[] args)
         {
             var a = new Atleta("623; Ug Imre; Kalocsai Rozmarok; 640");
+            Console.WriteLine("1.feladat: Adatok beolvasása.");
             Beolvas();
+            Console.WriteLine("\n2.feladat: Nevek és ugrások.");
+            Feladat2();
 
             //foreach (var i in lista)
             //{
