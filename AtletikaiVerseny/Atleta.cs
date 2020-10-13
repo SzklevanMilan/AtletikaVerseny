@@ -19,7 +19,8 @@ namespace AtletikaiVerseny
             string[] adat = sor.Split(';');
             Rajtszam  = adat[0];
             VezNev = adat[1];
-            //KerNev = adat[1];
+            //adat[1] = Convert.ToString(sor.Split(' '));
+            //KerNev = Convert.ToString(adat[1].Split(' '));
             Egyesulet = adat[2];
             Ugras = Convert.ToInt32(adat[3]);
 
